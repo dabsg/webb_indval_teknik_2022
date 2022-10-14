@@ -1,0 +1,56 @@
+
+body{
+
+height: 100vh;
+
+}
+header{
+  grid-area:he;
+  background-color: pink;
+}
+nav{
+  grid-area:na;
+  background-color: green;
+
+}
+aside{
+  grid-area:as;
+  background-color: grey;
+}
+main{
+  grid-area:ma;
+  background-color: orange;
+}
+footer{
+  grid-area:fo;
+  background-color: blue;
+}
+#wrapper{
+height:100%;
+display:grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 20% 5% 70% 5%;
+grid-template-areas:
+    "he he he he"
+    "na na na na"
+    "as ma ma ma"
+    "fo fo fo fo";
+}
+@media screen and (max-width:700px){
+
+#wrapper{
+  height:500%;
+grid-template-rows: 40% 40% 40% 40% 40%;
+  grid-template-areas:
+      "he he he he"
+      "na na na na"
+      "as as as as"
+      "ma ma ma ma"
+      "fo fo fo fo";
+  }
+
+}
+
+
+
+}

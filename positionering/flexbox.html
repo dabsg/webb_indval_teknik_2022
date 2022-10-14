@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      header{
+        height:100px;
+        width:100%;
+        background-color:pink;
+
+      }
+      nav{
+        height:40px;
+        width:100%;
+        background-color:blue;
+
+      }
+      aside{
+        height:500px;
+        width:40%;
+        background-color:grey;
+      }
+      footer{
+        height:40px;
+        width:100%;
+        background-color:orange;
+
+      }
+      main{
+        height:500px;
+        width:60%;
+        background-color:orange;
+      }
+      .container{
+        display:flex;
+      }
+      @media only screen and (max-width: 800px) {
+
+        .container{
+          flex-direction:column;
+        }
+        main{
+          width:100%;
+        }
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <header id="box1"> daniel</header>
+    <nav id="box2">daniel</nav>
+    <div class="container">
+      <aside id="box3">daniel</aside>
+      <main>    Flexbox används för att få barnen att placera sig brevid varandra.
+            https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+      </main>
+    </div>
+    <footer id="box4">daniel</footer>
+
+
+
+
+
+  </body>
+</html>

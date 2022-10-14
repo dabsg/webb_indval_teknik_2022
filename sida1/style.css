@@ -1,0 +1,93 @@
+#container{
+display:flex;
+margin:20px;
+
+}
+
+#ruta1{
+background-color: green;
+height: 200px;
+width:400px;
+margin:40px;
+border-radius: 20px;
+
+}
+#ruta2{
+background-color: blue;
+height: 200px;
+width:400px;
+margin:40px;
+border-radius: 20px;
+}
+#ruta3{
+background-color: red;
+height: 200px;
+width:400px;
+margin:40px;
+border-radius: 20px;
+}
+a{
+
+  font-size: 100px;
+  text-decoration: none;
+  font-family: fantasy;
+}
+
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+main{
+
+width: 800px;
+background-color: pink;
+
+}
+@media screen and (max-width:500px){
+
+
+    #ruta1{
+      width: 100%;
+    }
+
+    #ruta2{
+      width: 100%;
+    }
+
+    #ruta3{
+      width: 100%;
+    }
+
+
+}
+@media screen and (max-width:700px){
+
+  #container{
+
+    flex-direction: column;
+  }
+  main{
+
+    width:100%;
+
+  }
+
+
+
+}

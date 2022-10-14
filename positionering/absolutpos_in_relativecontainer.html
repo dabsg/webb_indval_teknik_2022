@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        #box1{
+        position:relative;
+        top:200px;
+        left:200px;
+        width:250px;
+        height:250px;
+        background-color:green;
+      }
+      #box2{
+        position:absolute;
+        top:100px;
+        left:20px;
+        width:100px;
+        height:100px;
+        background-color:pink;
+
+      }
+      #box3{
+
+      }
+    </style>
+  </head>
+  <body>
+i detta exempel är föreldern relativ vilket leder till att om barnen till denna har absolut positionering<br>
+så kommer barnen att få föräldern som origo (noll punkt) och inte webbläsarens övre vänstra hörn vilket är normalfallt<br>
+ om man använder absolut positionering på ett element.<br>
+ alltå kan man med detta upplägg flytta barnet inuti föräldern.<br>
+    <div id="box1">box1
+      <div id="box2">box2</div>
+    </div>
+
+
+  </body>
+</html>
