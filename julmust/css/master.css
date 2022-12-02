@@ -12,6 +12,7 @@ header{
   background-color: grey;
 }
 nav{
+  background-image: url('../img/gran.jpg');
   grid-area: nav;
   background-color: red;
 }
