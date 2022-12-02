@@ -1,0 +1,45 @@
+body{
+
+margin: 0px;
+padding: 0px;
+height:400vh;
+
+
+}
+
+header{
+  grid-area: he;
+  background-color: grey;
+}
+nav{
+  grid-area: nav;
+  background-color: red;
+}
+#news{
+  grid-area: ne;
+  background-color: #121212;
+}
+#map{
+  grid-area:map;
+  background-color: green;
+}
+footer{
+  grid-area: fo;
+  background-color: red;
+}
+
+#wrapper{
+height: 100%;
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+display:grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 25% 25% 25% 25%;
+
+grid-template-areas:
+"nav nav nav nav "
+"he he he he"
+"ne ne map map"
+"fo fo fo fo";
+}
