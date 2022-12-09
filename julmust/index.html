@@ -7,6 +7,10 @@
   </head>
   <body>
 
+<div id="b1">
+knapp
+</div>
+
     <div id="wrapper">
 
       <nav>
@@ -36,5 +40,24 @@
       </footer>
 
     </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+
+$("#b1").click(function (){
+console.log("funkar");
+$('html, body').animate({
+      scrollTop:$("#map").offset().top-20
+    }, 6000);
+
+
+});
+
+
+
+
+</script>
+
   </body>
 </html>
