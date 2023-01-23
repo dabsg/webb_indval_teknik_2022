@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementById example</title>
+</head>
+<body>
+  <p id="para1">Some text here</p>
+  <button id="b1">blue</button>
+  <button id="b2">red</button>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+
+    function changeColor(newColor) {
+      var elem = document.getElementById("para1");
+      elem.style.color = newColor;
+
+    }
+
+    document.getElementById("b1").addEventListener("click",function(){
+
+      changeColor('blue');
+    });
+
+    $("#b2").click(function(){
+
+      changeColor('red')
+    });
+
+
+  </script>
+
+</body>
+</html>
