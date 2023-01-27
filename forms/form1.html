@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <form>
+
+    <input type="text" name="username" value="">
+    <input type="date" id="dag" name="" value="">
+  <input type="color" name="" value="">
+
+ <label for="häst">häst</label><br>
+  <input id ="häst"type="radio" name="djur" value="häst">
+  hund<input type="radio" name="djur" value="hund">
+  katt<input type="radio" name="djur" value="katt">
+    <div id="send" >klicka här om du vågar</div>
+
+  </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+$("#send").click(function(){
+  var datum   = $("#dag").val();
+  var datum2= document.getElementById("dag").value;
+    console.log(datum);
+$("#send").text(datum);
+});
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
