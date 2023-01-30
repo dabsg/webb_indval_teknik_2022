@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>daniels sida</title>
+  </head>
+  <body>
+
+
+      <label for="user">username</label>
+      <input id="user" type="text" name="username" value="">
+
+      <input type="date" name="" value="">
+      <br>
+      häst<input type="radio" name="djur" value="">
+      hund<input type="radio" name="djur" value="">
+      katt<input type="radio" name="djur" value="">
+
+
+      potatis<input type="checkbox" name="" value="">
+      ris<input type="checkbox" name="" value="">
+      pasta<input type="checkbox" name="" value="">
+
+      <input id="klar" type="submit" name="knapp" value="send form">
+
+
+    <div id="svar">
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+$("#klar").click(function(){
+  var user=$("#user").val();
+  $("#svar").text(user);
+});
+</script>
+
+  </body>
+</html>
