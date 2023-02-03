@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      #right{
+
+        display:none;
+      }
+
+
+      #bilder{
+        display:flex;
+        position:relative;
+
+      }
+      #window{
+        width:640px;
+        height:407px;
+        overflow:hidden;
+
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div id="window">
+      <div id="bilder">
+        <img src="bilder/bild1.jpg" alt="fin himmel">
+        <img src="bilder/bild2.jpg" alt="fin himmel">
+        <img src="bilder/bild3.jpg" alt="fin himmel">
+      </div>
+    </div>
+<button type="button" name="button" id ="right">right</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+  $("#right").show();
+
+
+  $("#right").click(function(){
+
+  //  $("#bilder").css("right","+=640px")
+
+  $("#bilder").animate({
+    right:"+=640",
+
+  }, 3000, function(){
+    console.log("färdig");
+  });
+
+
+  });
+
+
+
+</script>
+  </body>
+</html>
